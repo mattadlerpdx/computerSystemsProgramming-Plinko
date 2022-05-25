@@ -13,10 +13,10 @@ Here is the algorithm for traversal:
 3.GO MIDDLE:
 4.if (head->board[x][y+1]!='X')
 5.goMiddle: head->board[x][y+1];
-6. Else
-7.Two CASES FOR TRAVERSAL:
-8.Encounter obstacle->Get a random number(odd, go left, even go right), then Check:
-9.if obstacle at LEFT ie head->board[x-1][y+1] Only go right head->board[x+1][y+1](goRIGHT)
+Else
+6.Two CASES FOR TRAVERSAL:
+Encounter obstacle->Get a random number(odd, go left, even go right), then Check:
+7.if obstacle at LEFT ie head->board[x-1][y+1] Only go right head->board[x+1][y+1](goRIGHT)
 10.if obstacle at RIGHT ie head->board[x+1][y+1] Only go left  [x-1][y+1](goLeft)
 11.Upon each traversal, the column at which the plinko exits is caught in the variable called exit. This will be placed into another array that holds the max amount of columns from that board. The exit is the index in which we increment.     
 
